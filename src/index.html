@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./global.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <Title>Document</Title>
+</head>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xsm': '320px', 
+          },
+          colors: {
+           'blue':'#0065FF',
+           'gray':'#E5E5E5',
+          },
+          spacing: {
+            '15': '3.75rem',
+            '25': '6.5rem',
+          }
+        }
+      }
+    }
+</script>
+<body>
+  <header>
+    <nav class="flex justify-between text-center py-8 px-20 shadow-2xl">
+        <div class="flex justify-between text-center 
+             sm:max-lg:inline-block
+             xsm:max-sm:inline-block">
+            <div class="pr-12 xsm:max-sm:inline-block">
+                <p class="text-xl font-bold">kevin Bennite</p>
+            </div>
+            <div>
+                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block">section two</a>
+                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block">section three</a>
+                <a href="#" class="text-blue section-style xsm:max-sm:inline-block">section four</a>
+            </div>
+        </div>
+        <div dir="rtl"
+             class="flex justify-between text-center
+                    sm:max-lg:inline-block
+                    xsm:max-sm:inline-block">
+              <p class="pl-12 w-auto section-style 
+                        xsm:max-lg:mb-3">
+                dark mode
+              </p>        
+            <div class="flex">
+              <a href="#" class="text-blue xsm:max-sm:inline-block xsm:max-sm:pr-0">
+                <img src="../icon/Vector (2).svg" alt="">
+              </a>
+              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block xsm:max-sm:pr-0">
+                <img src="../icon/Vector (1).svg" alt="">
+              </a>
+              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block  xsm:max-sm:pr-0">
+                <img src="../icon/Vector.svg" alt="">
+              </a>
+            </div>        
+        </div>
+    </nav>
+  </header>
+    <section class="mx-60 mt-12 mb-20
+                    xsm:max-lg:mx-10">
+      <img class="w-25 h-25 rounded-full" src="../icon/ImagePlaceholder-light.svg" alt=""> 
+      <h1 class="pt-10 font-bold	text-7xl mb-20 text-blue font-EBGaramond">
+        Hello.
+        <hr class="border-none">
+        My name is Kevin.
+      </h1>
+      <hr class="mb-20 w-3/12 border-l-4 border-blue"></hr>
+      <p>
+        I'm a Digital Product and UI Designer – creating digital experiences that are intuitive for real people and making complex processes easy to use.
+        <hr class="border-none">
+        Right now, I'm Design Lead at Holiday Extras, covering all our digital platforms across a whole load of brands – leading a great team across design, UI engineering, accessibility and customer experience. I'm lucky to be part of a great team of designers, writers, engineers, PMs and data specialists – amongst others – testing, iterating and optimising our platforms and products.
+        <hr class="border-none">
+        I've got some work on Dribbble, some previous work at Saga and you can find me over on twitter and sometimes on Medium too. I also take too many photos.
+      </p>
+      <p class="mt-11 bg-gray-200 p-5 rounded-xl w-3/5 bg-slate-100	">
+        Available for work and general design goodness – say hello
+      </p>
+
+    </section>
+    <section class="mx-60 border-t-2 border-blue
+                    xsm:max-lg:mx-10">
+      <h2 class="pt-20 text-2xl	text-blue font-bold">Title</h2>
+      <p class="py-9">
+        Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
+      </p>
+      <div class="flex 
+                  xsm:max-lg:flex-col">
+        <img class="card-img " src="../icon/ImagePlaceholder-light.svg" alt="">
+        <div class="pl-10  
+                    xsm:max-lg:p-0">
+          <h5 class="text-xl font-bold">Title</h5>
+          <p class="text-base">
+            Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+          </p>
+          <button class="border border-blue 
+                        py-4 px-7 mt-7 text-xs
+                       text-blue rounded-full font-bold
+                        hover:text-transparent">
+                        Button Primary Light
+          </button>
+        </div>
+      </div>
+      <div class="flex mt-9 
+                  xsm:max-lg:flex-col xsm:max-lg: ">
+        <div class="pr-10">
+          <h5 class="text-xl font-bold">Title</h5>
+          <p class="text-base">
+            Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+          </p>
+          <button class="border border-blue
+                         py-4 px-7 mt-7 text-xs
+                        text-blue rounded-full font-bold
+                         hover:text-transparent">
+                         Button Primary Light
+          </button>
+        </div>
+        <img class="card-img " src="../icon/ImagePlaceholder-light.svg" alt="">
+      </div>
+    </section>
+    <section class="my-20 bg-gray h-546 items-center flex 
+                    xsm:max-lg:py-3
+                    xsm:max-lg:h-full">
+      <div class="flex xsm:max-lg:flex-col">
+        <img class="card-img ms-15
+                    xsm:max-lg:mx-auto"
+           src="../icon/ImagePlaceholder-light.svg" alt="">
+        <div class="pl-10 me-56 
+                    xsm:max-lg:me-10
+                    xsm:max-lg:mt-3">
+          <h5 class="text-xl text-blue align-text-top mb-9 font-bold">Title</h5>
+          <p class="text-base mb-9
+                    xsm:max-lg:mb-0">
+            Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
+            Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
+            Line of copy in here to decribe this section. Line of copy in here to decribe this section.        
+          </p>
+          <button class="border bg-white font-bold
+                     border-blue py-4 px-7 mt-7
+                       text-xs text-blue rounded-full
+                       hover:text-transparent
+                       xsm:max-lg:mt-2
+                       ">
+            Sign up to our newsletter
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="mx-60 mt-12 mb-20 
+                    xsm:max-lg:mt-60
+                    xsm:max-lg:mx-10">
+      <h5 class="text-xl text-blue align-text-top mb-9 font-bold">Title</h5>
+      <p>
+        Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section.         
+      </p>
+      <div class="flex mt-20 
+                  xsm:max-md:flex-col">
+        <img class="placeholder-img
+                    xsm:max-md:mx-auto" 
+          src="../icon/ImagePlaceholder-light.svg" alt="">
+        <div class="ms-9 xsm:max-md:mt-3">
+          <h5 class="text-xl font-bold title">Title</h5>
+          <label for="title" class="text-sm">Subhead in here</label>
+          <p class="mt-4">
+            Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+          </p>
+        </div>
+      </div>
+      <div class="flex mt-20 
+                  xsm:max-md:flex-col">
+        <img class="placeholder-img
+                    xsm:max-md:mx-auto" 
+          src="../icon/ImagePlaceholder-light.svg" alt="">
+        <div class="ms-9 xsm:max-md:mt-3">
+          <h5 class="text-xl font-bold title">Title</h5>
+          <label for="title" class="text-sm">Subhead in here</label>
+          <p class="mt-4">
+            Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+          </p>
+        </div>
+      </div>
+      <div class="flex mt-20 
+                  xsm:max-md:flex-col">
+        <img class="placeholder-img
+                    xsm:max-md:mx-auto" 
+          src="../icon/ImagePlaceholder-light.svg" alt="">
+        <div class="ms-9 xsm:max-md:mt-3">
+          <h5 class="text-xl font-bold title">Title</h5>
+          <label for="title" class="text-sm">Subhead in here</label>
+          <p class="mt-4">
+            Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms. Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+          </p>
+        </div>
+      </div>
+
+    </section>
+    <footer class="mx-60 mt-12 mb-20 p-10
+                   bg-gray rounded-xl shadow-2xl
+                   xsm:max-lg:mx-10
+                   xsm:max-lg:p-10">
+      <h4 class="font-bold">
+        Come say ‘hello’  👋  we’d really to talk about your project!   
+      </h4>
+        <button 
+          class="border bg-white
+               border-blue py-4 px-7 mt-9 font-bold
+                text-xs text-blue rounded-full
+                xsm:max-lg:py-2
+                xsm:max-lg:px-2
+                hover:text-transparent">
+                 Email us
+        </button>
+        <button 
+          class="border bg-white
+               border-blue py-4 px-7 mt-9 font-bold
+                text-xs text-blue rounded-full
+                xsm:max-lg:py-2
+                xsm:max-lg:px-2
+                xsm:max-lg:mt-2
+                 hover:text-transparent">
+                 @  us on Twitter
+        </button>
+    </footer>
+
+</body>
+</html>
