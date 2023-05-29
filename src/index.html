@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./global.css">
-    
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp">
+    </script>
     <Title>Document</Title>
 </head>
 <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           screens: {
@@ -19,6 +22,7 @@
           colors: {
            'blue':'#0065FF',
            'gray':'#E5E5E5',
+           'dark-gray': '#434343',
           },
           spacing: {
             '15': '3.75rem',
@@ -28,37 +32,49 @@
       }
     }
 </script>
+
+<style>
+  .dark {
+      background-color:rgb(29, 37, 43);
+      color: white;
+  }
+</style>
 <body>
   <header>
-    <nav class="flex justify-between text-center py-8 px-20 shadow-2xl">
+    <nav class="flex justify-between text-center
+               py-8 px-20 shadow-2xl
+               dark:bg-dark-gray">
         <div class="flex justify-between text-center 
-             sm:max-lg:inline-block
-             xsm:max-sm:inline-block">
-            <div class="pr-12 xsm:max-sm:inline-block">
+             xsm:max-lg:inline-block">
+            <div class="pr-12
+                        xsm:max-sm:inline-block
+                        xsm:max-sm:pl-0">
                 <p class="text-xl font-bold">kevin Bennite</p>
             </div>
             <div>
-                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block">section two</a>
-                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block">section three</a>
-                <a href="#" class="text-blue section-style xsm:max-sm:inline-block">section four</a>
+                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block dark:text-white">section two</a>
+                <a href="#" class="pr-5 text-blue section-style xsm:max-sm:inline-block dark:text-white">section three</a>
+                <a href="#" class="text-blue section-style xsm:max-sm:inline-block dark:text-white">section four</a>
             </div>
         </div>
         <div dir="rtl"
              class="flex justify-between text-center
-                    sm:max-lg:inline-block
-                    xsm:max-sm:inline-block">
-              <p class="pl-12 w-auto section-style 
-                        xsm:max-lg:mb-3">
-                dark mode
-              </p>        
-            <div class="flex">
-              <a href="#" class="text-blue xsm:max-sm:inline-block xsm:max-sm:pr-0">
+                    xsm:max-lg:inline-block">
+          <button class="border p-1 w-auto ml-12
+                         xsm:max-lg:mb-3 xsm:max-sm:w-24
+                         " 
+             onclick="document.body.classList.toggle('dark')"> 
+                  dark mode
+          </button>
+                  
+            <div class="flex items-center">
+              <a href="#" class="xsm:max-sm:inline-block xsm:max-sm:pr-1 ">
                 <img src="../icon/Vector (2).svg" alt="">
               </a>
-              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block xsm:max-sm:pr-0">
+              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block xsm:max-sm:pr-1 ">
                 <img src="../icon/Vector (1).svg" alt="">
               </a>
-              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block  xsm:max-sm:pr-0">
+              <a href="#" class="pr-5 text-blue xsm:max-sm:inline-block  xsm:max-sm:pr-1 ">
                 <img src="../icon/Vector.svg" alt="">
               </a>
             </div>        
@@ -68,12 +84,12 @@
     <section class="mx-60 mt-12 mb-20
                     xsm:max-lg:mx-10">
       <img class="w-25 h-25 rounded-full" src="../icon/ImagePlaceholder-light.svg" alt=""> 
-      <h1 class="pt-10 font-bold	text-7xl mb-20 text-blue font-EBGaramond">
+      <h1 class="pt-10 font-bold	text-7xl mb-20 text-blue font-EBGaramond dark:text-white">
         Hello.
         <hr class="border-none">
         My name is Kevin.
       </h1>
-      <hr class="mb-20 w-3/12 border-l-4 border-blue"></hr>
+      <hr class="mb-20 w-3/12 border-l-4 border-blue dark:border-white"></hr>
       <p>
         I'm a Digital Product and UI Designer – creating digital experiences that are intuitive for real people and making complex processes easy to use.
         <hr class="border-none">
@@ -81,14 +97,16 @@
         <hr class="border-none">
         I've got some work on Dribbble, some previous work at Saga and you can find me over on twitter and sometimes on Medium too. I also take too many photos.
       </p>
-      <p class="mt-11 bg-gray-200 p-5 rounded-xl w-3/5 bg-slate-100	">
+      <p class="mt-11 bg-gray-200 p-5 rounded-xl w-4/6
+                xsm:max-md:w-auto">
         Available for work and general design goodness – say hello
       </p>
 
     </section>
     <section class="mx-60 border-t-2 border-blue
-                    xsm:max-lg:mx-10">
-      <h2 class="pt-20 text-2xl	text-blue font-bold">Title</h2>
+                    xsm:max-lg:mx-10
+                    dark:border-white">
+      <h2 class="pt-20 text-2xl	text-blue font-bold dark:text-white">Title</h2>
       <p class="py-9">
         Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
       </p>
@@ -104,7 +122,10 @@
           <button class="border border-blue 
                         py-4 px-7 mt-7 text-xs
                        text-blue rounded-full font-bold
-                        hover:text-transparent">
+                        hover:text-white hover:bg-blue
+                        dark:hover:text-black dark:hover:bg-white
+                        dark:text-white dark:border-white
+                        dark:bg-dark-gray">
                         Button Primary Light
           </button>
         </div>
@@ -119,7 +140,10 @@
           <button class="border border-blue
                          py-4 px-7 mt-7 text-xs
                         text-blue rounded-full font-bold
-                         hover:text-transparent">
+                         hover:text-white hover:bg-blue
+                         dark:hover:text-black dark:hover:bg-white
+                         dark:text-white dark:border-white
+                         dark:bg-dark-gray">
                          Button Primary Light
           </button>
         </div>
@@ -127,8 +151,8 @@
       </div>
     </section>
     <section class="my-20 bg-gray h-546 items-center flex 
-                    xsm:max-lg:py-3
-                    xsm:max-lg:h-full">
+                    xsm:max-lg:py-3 xsm:max-lg:h-full
+                    dark:bg-dark-gray">
       <div class="flex xsm:max-lg:flex-col">
         <img class="card-img ms-15
                     xsm:max-lg:mx-auto"
@@ -136,7 +160,7 @@
         <div class="pl-10 me-56 
                     xsm:max-lg:me-10
                     xsm:max-lg:mt-3">
-          <h5 class="text-xl text-blue align-text-top mb-9 font-bold">Title</h5>
+          <h5 class="text-xl text-blue align-text-top mb-9 font-bold dark:text-white">Title</h5>
           <p class="text-base mb-9
                     xsm:max-lg:mb-0">
             Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
@@ -146,9 +170,11 @@
           <button class="border bg-white font-bold
                      border-blue py-4 px-7 mt-7
                        text-xs text-blue rounded-full
-                       hover:text-transparent
+                       hover:text-white hover:bg-blue
                        xsm:max-lg:mt-2
-                       ">
+                       dark:hover:text-black dark:hover:bg-white
+                       dark:text-white dark:border-white
+                       dark:bg-dark-gray">
             Sign up to our newsletter
           </button>
         </div>
@@ -157,7 +183,7 @@
     <section class="mx-60 mt-12 mb-20 
                     xsm:max-lg:mt-60
                     xsm:max-lg:mx-10">
-      <h5 class="text-xl text-blue align-text-top mb-9 font-bold">Title</h5>
+      <h5 class="text-xl text-blue align-text-top mb-9 font-bold dark:text-white">Title</h5>
       <p>
         Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section.         
       </p>
@@ -205,7 +231,8 @@
     <footer class="mx-60 mt-12 mb-20 p-10
                    bg-gray rounded-xl shadow-2xl
                    xsm:max-lg:mx-10
-                   xsm:max-lg:p-10">
+                   xsm:max-lg:p-10
+                   dark:bg-dark-gray">
       <h4 class="font-bold">
         Come say ‘hello’  👋  we’d really to talk about your project!   
       </h4>
@@ -213,9 +240,11 @@
           class="border bg-white
                border-blue py-4 px-7 mt-9 font-bold
                 text-xs text-blue rounded-full
-                xsm:max-lg:py-2
-                xsm:max-lg:px-2
-                hover:text-transparent">
+                xsm:max-lg:py-2  xsm:max-lg:px-2
+                hover:text-white  hover:bg-blue
+                dark:hover:text-black dark:hover:bg-white
+                dark:text-white dark:border-white
+                dark:bg-dark-gray">
                  Email us
         </button>
         <button 
@@ -225,10 +254,17 @@
                 xsm:max-lg:py-2
                 xsm:max-lg:px-2
                 xsm:max-lg:mt-2
-                 hover:text-transparent">
+                 hover:text-white
+                 hover:bg-blue
+                 dark:hover:text-black dark:hover:bg-white
+                 dark:text-white dark:border-white
+                 dark:bg-dark-gray">
                  @  us on Twitter
         </button>
     </footer>
 
 </body>
+
+
+
 </html>
