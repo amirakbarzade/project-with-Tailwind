@@ -6,6 +6,11 @@ body {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
+.dark {
+    background-color:rgb(29, 37, 43);
+    color: white;
+}
+
 .font-EBGaramond {
     font-family: 'EB Garamond', serif;
 }
